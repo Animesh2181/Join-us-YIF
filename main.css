@@ -1,3 +1,30 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Main Section */
+.main-section{
+    text-align: center;
+    padding: 10% 15%;
+    background: url(https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=2033&h=1012&fit=max&q=50) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.apply-btn{
+    margin: 4% 3% 3% 0;
+}
+
+.main-heading{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* Call to action section */
+.cta-section{
+    text-align: center;
+    background-color: #289eb6;
+    padding: 5%;
+}
