@@ -6,30 +6,31 @@ body{
 .main-section{
     text-align: center;
     padding: 10% 15%;
-    background:url(imgs/front.jpg) no-repeat center;
+    background: url(https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=2033&h=1012&fit=max&q=50) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-	margin: 4rem 0 9rem 0;
-	
 }
 
 .apply-btn{
     margin: 4% 3% 3% 0;
 }
 
-.main-heading1{
+.main-heading{
     font-size: 3.5rem;
     line-height: 1.5;
 }
-.main-heading2{
-    font-size: 1.5rem;
-    line-height: 1.5;
+
+/* Call to action section */
+.cta-section{
+    text-align: center;
+    background-color: #289eb6;
+    padding: 5%;
 }
 
 
-/*Testimonials */
+/* testimonials */
 .card {
 	margin: 0 auto;
 	border: none;
@@ -61,15 +62,14 @@ display:inline-block;
 	text-align: left;
 }
 .card .carousel-control-prev, .card .carousel-control-next {
-	/* color: #3d3d3d !important; */
-	text-decoration: none;
+	color: #3d3d3d !important;
 	opacity: 1 !important;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
 	background-image: none;
 	color: #fff;
 	font-size: 14px;
-	background-color: #f38704;
+	background-color: #cd3a54;
 	height: 32px;
 	line-height: 32px;
 	width: 32px;
@@ -86,7 +86,7 @@ display:inline-block;
 	top: 110%;
 }
 .midline {
-	width: 90px;
+	width: 60px;
 	border-top: 1px solid #d43025;
 }
 .carousel-caption h2 {
@@ -154,109 +154,56 @@ display:inline-block;
 	font-weight: 700;
 }
 }
-
-/* Call to action section */
-.cta-section{
-    text-align: center;
-    background-color: #289eb6;
-    padding: 5%;
-	margin: 4rem 0;
+.social-menu ul {
+    position:absolute;
+    top:320%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
-
-/*testimonials*/
-
-.testimonials-clean {
-	color:#313437;
-	background-color:#DBE6FD;
-  }
-  
-  .testimonials-clean p {
-	color:#7d8285;
-  }
-  
-  .testimonials-clean h2 {
-	font-weight:bold;
-	margin-bottom:40px;
-	padding-top:40px;
-	color:inherit;
-  }
-  
-  @media (max-width:767px) {
-	.testimonials-clean h2 {
-	  margin-bottom:25px;
-	  padding-top:25px;
-	  font-size:24px;
-	}
-  }
-  
-  .testimonials-clean .intro {
-	font-size:16px;
-	max-width:500px;
-	margin:0 auto;
-  }
-  
-  .testimonials-clean .intro p {
-	margin-bottom:0;
-  }
-  
-  .testimonials-clean .people {
-	padding:50px 0 20px;
-  }
-  
-  .testimonials-clean .item {
-	margin-bottom:32px;
-  }
-  
-  @media (min-width:768px) {
-	.testimonials-clean .item {
-	  height:220px;
-	}
-  }
-  
-  .testimonials-clean .item .box {
-	padding:30px;
-	background-color:#fff;
-	position:relative;
-  }
-  
-  .testimonials-clean .item .box:after {
-	content:'';
-	position:absolute;
-	left:30px;
-	bottom:-24px;
-	width:0;
-	height:0;
-	border:15px solid transparent;
-	border-width:12px 15px;
-	border-top-color:#fff;
-  }
-  
-  .testimonials-clean .item .author {
-	margin-top:28px;
-	padding-left:25px;
-  }
-  
-  .testimonials-clean .item .name {
-	font-weight:bold;
-	margin-bottom:2px;
-	color:inherit;
-  }
-  
-  .testimonials-clean .item .title {
-	font-size:13px;
-	color:#9da9ae;
-  }
-  
-  .testimonials-clean .item .description {
-	font-size:15px;
-	margin-bottom:0;
-  }
-  
-  .testimonials-clean .item img {
-	max-width:150px;
-	float:left;
-	margin-right:12px;
-	margin-top:-5px;
-  }
-  
-  
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display :block;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
